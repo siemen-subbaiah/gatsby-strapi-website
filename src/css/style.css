@@ -172,6 +172,11 @@ footer {
   height: 10vh;
 }
 
+/* 404 */
+.dead-end {
+  height: 80vh;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 600px) {
   .ham-icon {
