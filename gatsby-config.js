@@ -23,7 +23,9 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: process.env.DEPLOY_URL
+          ? "https://pp-template.herokuapp.com"
+          : "http://localhost:1337",
         queryLimit: 1000,
         contentTypes: [`Hero-images`, `Gallery`, `Services`, `Skills`],
         singleTypes: [`About`],
