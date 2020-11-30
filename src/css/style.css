@@ -1,0 +1,238 @@
+body {
+  background-color: #f0f0f0;
+  font-family: "Montserrat";
+}
+
+img {
+  width: 100%;
+}
+
+/* NAVBAR */
+nav {
+  display: flex !important;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #047aed;
+  color: #fff;
+  height: 10vh;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items li {
+  list-style: none;
+}
+
+.links {
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+.links:hover {
+  color: #fff;
+}
+
+h1 .links {
+  padding-left: 0.1rem;
+  font-size: 2rem;
+}
+.social-icon {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0.5rem 1rem;
+}
+
+.ham-icon {
+  font-size: 1.7rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* HERO SECTION */
+
+.hero {
+  background-color: hsl(186, 100%, 94%);
+  position: relative;
+}
+
+.hero-main {
+  height: 90vh;
+}
+
+.containermy {
+  max-width: 1550px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.hero-heading {
+  font-size: 2rem;
+}
+
+.hero-quote {
+  color: #2d3233;
+  font-family: "Montserrat";
+}
+
+/* SKILLS SECTION */
+
+.skills {
+  height: 100vh;
+  background-color: #f1f5f8;
+}
+
+.cover {
+  background: url("/tianjin-2185510_1920.jpg");
+  height: 45vmin;
+  width: 100%;
+  background-position: -24rem -19rem;
+  background-size: 150%;
+  position: relative;
+}
+
+.cover::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+}
+
+.skills-cards {
+  margin-top: -6rem;
+}
+
+/* SERVICES */
+
+.services-card {
+  background-color: #fff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in;
+}
+
+.services-card:hover {
+  transform: translateY(-10px);
+}
+
+/* CONTACT */
+
+.contact {
+  background-color: #f1f5f8;
+}
+
+.contact-main {
+  height: 70vh;
+}
+
+.contact-content h1 {
+  font-size: 3rem;
+}
+
+/* ABOUT */
+
+.about {
+  background-color: #f1f5f8;
+}
+
+.about-main {
+  height: 80vh;
+}
+
+.about-main p {
+  font-size: 1.3rem;
+}
+
+/* GALLERY */
+
+.gallery {
+  overflow: hidden;
+}
+
+.gallery-img {
+  cursor: pointer;
+}
+
+span {
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  display: flex !important;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #047aed;
+  color: #fff;
+  height: 10vh;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+  .ham-icon {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: initial;
+  }
+  footer {
+    flex-direction: column;
+    height: initial;
+  }
+  nav .nav-items {
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    width: 100%;
+    padding: 0;
+  }
+  .logo {
+    margin-left: 1.3rem;
+  }
+  li {
+    padding: 0.8rem 0rem;
+    width: 100%;
+  }
+  nav .ul-show {
+    height: 13rem;
+  }
+  .hero-heading {
+    font-size: 1.6rem;
+  }
+  .contact-content h1 {
+    font-size: 2rem;
+  }
+  .contact-main {
+    height: 85vh;
+  }
+  .about-main p {
+    font-size: 1.2rem;
+  }
+  .about-main h1 {
+    font-size: 2rem;
+  }
+  .services h1 {
+    font-size: 2rem;
+  }
+  .hero-quote {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .hero-heading {
+    font-size: 1.4rem;
+    /* background-color: red; */
+  }
+}
