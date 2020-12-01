@@ -27,8 +27,9 @@ const Gallery = () => {
     allStrapiGallery: { nodes: images },
   } = data
   return (
-    <section className="gallery my-2">
-      <h1 className="text-center py-4">Gallery</h1>
+    <section className="gallery my-4">
+      <h1 className="text-center">Gallery</h1>
+      <div className="underline"></div>
       <Row>
         {images.map(item => {
           return (

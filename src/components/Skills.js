@@ -24,6 +24,7 @@ const Skills = () => {
     <section className="services">
       <div className="services-content py-3">
         <h1 className="text-center">SKILLS</h1>
+        <div className="underline"></div>
       </div>
       <div className="cover"></div>
       <Container>

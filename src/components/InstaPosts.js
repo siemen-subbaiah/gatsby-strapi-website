@@ -14,7 +14,6 @@ const query = graphql`
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }
-          url
         }
       }
     }
@@ -29,6 +28,7 @@ const InstaPosts = () => {
   return (
     <section className="insta my-3">
       <h1 className="text-center py-2">Recent Insta Posts</h1>
+      <div className="underline"></div>
       <Container>
         <Row>
           {posts.map(item => {
@@ -36,7 +36,7 @@ const InstaPosts = () => {
               <Col lg={4} key={item.id}>
                 <Card className="services-card">
                   <a
-                    href={item.localFile.url}
+                    href={`https://www.instagram.com/p/${item.id}/`}
                     target="_blank"
                     rel="noreferrer"
                     key={item.id}
