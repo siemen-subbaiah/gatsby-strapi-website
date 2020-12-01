@@ -26,7 +26,6 @@ const Gallery = () => {
   const {
     allStrapiGallery: { nodes: images },
   } = data
-  console.log(images)
   return (
     <section className="gallery my-2">
       <h1 className="text-center py-4">Gallery</h1>

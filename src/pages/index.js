@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Skills from "../components/Skills"
 import SimpleReactLightbox from "simple-react-lightbox"
+import InstaPosts from "../components/InstaPosts"
 
 const index = () => {
   return (
@@ -15,6 +16,7 @@ const index = () => {
       <SimpleReactLightbox>
         <Gallery />
       </SimpleReactLightbox>
+      <InstaPosts />
     </Layout>
   )
 }

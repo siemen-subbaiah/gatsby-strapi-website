@@ -21,6 +21,7 @@
     "gatsby-plugin-sharp": "^2.9.1",
     "gatsby-plugin-sitemap": "^2.7.0",
     "gatsby-source-filesystem": "^2.6.1",
+    "gatsby-source-instagram": "^0.9.0",
     "gatsby-source-strapi": "0.0.12",
     "gatsby-transformer-sharp": "^2.7.0",
     "react": "^16.12.0",
